@@ -37,16 +37,27 @@ int main (){
       printf("*Nao pode conter carateres especiais.\n");
       printf("Resposta: ");
       scanf("%f", &Populacao1_C1);
-
+      
       printf("4) Defina um valor de PIB:\n");
       printf("*Nao pode conter carateres especiais.\n");
       printf("Resposta: ");
       scanf("%f", &PIB_C1);
-
+      
       printf("5) Defina a quantidade de pontos Turisticos:\n");
       printf("*Nao pode conter carateres especiais.\n");
       printf("Resposta: ");
       scanf("%i", &Pontos_turisticos1_C1);
+      
+
+    //EXIBINDO INFORMACOES CAPTURADAS
+      printf("===== Captura das informacoes bem sucedidas =====\n");
+      printf("Codigo da Carta: %s.\n", Codigo_da_Carta_C1);
+      printf("Estado: %s.\n", Estado1_C1);
+      printf("Cidade: %s.\n", Cidade1_C1);
+      printf("Populacao: %i.\n", Populacao1_C1);
+      printf("PIB: %f.\n", PIB_C1);
+      printf("Pontos Turisticos: %i.\n", Pontos_turisticos1_C1);
+      
 
     //CARTA2
       char Codigo_da_Carta_C2[06] = "C0002", Estado1_C2[30], Cidade1_C2[30];
@@ -60,7 +71,7 @@ int main (){
       printf("*Nao pode passar de 29 caracteres.\n");
       printf("Resposta: ");
       scanf("%s", &Estado1_C2);
-
+      
       printf("2) Defina um nome para Cidade:\n");
       printf("*Nao pode conter carateres especiais.\n");
       printf("*Nao pode passar de 29 caracteres.\n");
@@ -71,7 +82,7 @@ int main (){
       printf("*Nao pode conter carateres especiais.\n");
       printf("Resposta: ");
       scanf("%f", &Populacao1_C2);
-
+      
       printf("4) Defina um valor de PIB:\n");
       printf("*Nao pode conter carateres especiais.\n");
       printf("Resposta: ");
@@ -81,25 +92,16 @@ int main (){
       printf("*Nao pode conter carateres especiais.\n");
       printf("Resposta: ");
       scanf("%i", &Pontos_turisticos1_C2);
-
-
+      
+    //EXIBINDO INFORMACOES CAPTURADAS
     printf("===== Captura das informacoes bem sucedidas =====\n");
-    //EXIBINDO INFORMACOES CAPTURADAS
-      printf("Codigo da Carta: %s.\n", Codigo_da_Carta_C1);
-      printf("Estado: %s.\n", Estado1_C1);
-      printf("Cidade: %s.\n", Cidade1_C1);
-      printf("Populacao: %i.\n", Populacao1_C1);
-      printf("PIB: %f.\n", PIB_C1);
-      printf("Pontos Turisticos: %i.\n", Pontos_turisticos1_C1);
-
-  
-    //EXIBINDO INFORMACOES CAPTURADAS
       printf("Codigo da Carta: %s.\n", Codigo_da_Carta_C2);
       printf("Estado: %s.\n", Estado1_C2);
       printf("Cidade: %s.\n", Cidade1_C2);
       printf("Populacao: %i.\n", Populacao1_C2);
       printf("PIB: %f.\n", PIB_C2);
       printf("Pontos Turisticos: %i.\n", Pontos_turisticos1_C2);
-
+      
+      
   return 0;
 }
