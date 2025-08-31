@@ -1,0 +1,107 @@
+#include <stdio.h>
+/*=== DECLARANDO VARIAVEIS ===
+• char exemplo[tamanho_numerico_de_carateres]: Guarda caracteres, usando %s na coleta ou impressao do tamnho declarado -1;
+• char exemplo = A: Guarda um único caractere, usando %c na coleta ou impressao;
+• int exemplo: Guarda um número inteiro, usando %d ou %i na coleta ou impressao;
+• float exemplo: Guarda um número real com certa precisao, usando %f na coleta ou impressao;
+• double exemplo: Guarda um número real com precisao maior que float, usando %e na coleta ou impressao;
+• void exemplo: Tipo vazio.
+
+==== FUNCOES BASICAS ====
+
+*/
+
+int main (){
+
+  //COLETANDO DADOS DO USUARIO
+    //CARTA1
+      char Codigo_da_Carta_C1[06] = "C0001", Estado1_C1[30], Cidade1_C1[30];
+      int Populacao1_C1, Pontos_turisticos1_C1;
+      float Area_C1, PIB_C1;
+
+      printf("Codigo da carta: %s.\n", Codigo_da_Carta_C1);
+
+      printf("1) Defina um nome para Estado:\n");
+      printf("*Nao pode conter carateres especiais.\n");
+      printf("*Nao pode passar de 29 caracteres.\n");
+      printf("Resposta: ");
+      scanf("%s", &Estado1_C1);
+
+      printf("2) Defina um nome para Cidade:\n");
+      printf("*Nao pode conter carateres especiais.\n");
+      printf("*Nao pode passar de 29 caracteres.\n");
+      printf("Resposta: ");
+      scanf("%s", &Cidade1_C1);
+
+      printf("3) Defina um valor de populacao:\n");
+      printf("*Nao pode conter carateres especiais.\n");
+      printf("Resposta: ");
+      scanf("%f", &Populacao1_C1);
+
+      printf("4) Defina um valor de PIB:\n");
+      printf("*Nao pode conter carateres especiais.\n");
+      printf("Resposta: ");
+      scanf("%f", &PIB_C1);
+
+      printf("5) Defina a quantidade de pontos Turisticos:\n");
+      printf("*Nao pode conter carateres especiais.\n");
+      printf("Resposta: ");
+      scanf("%i", &Pontos_turisticos1_C1);
+
+    //CARTA2
+      char Codigo_da_Carta_C2[06] = "C0002", Estado1_C2[30], Cidade1_C2[30];
+      int Populacao1_C2, Pontos_turisticos1_C2;
+      float Area_C2, PIB_C2;
+
+      printf("Codigo da carta: %s.\n", Codigo_da_Carta_C2);
+
+      printf("1) Defina um nome para Estado:\n");
+      printf("*Nao pode conter carateres especiais.\n");
+      printf("*Nao pode passar de 29 caracteres.\n");
+      printf("Resposta: ");
+      scanf("%s", &Estado1_C2);
+
+      printf("2) Defina um nome para Cidade:\n");
+      printf("*Nao pode conter carateres especiais.\n");
+      printf("*Nao pode passar de 29 caracteres.\n");
+      printf("Resposta: ");
+      scanf("%s", &Cidade1_C2);
+
+      printf("3) Defina um valor de populacao:\n");
+      printf("*Nao pode conter carateres especiais.\n");
+      printf("Resposta: ");
+      scanf("%f", &Populacao1_C2);
+
+      printf("4) Defina um valor de PIB:\n");
+      printf("*Nao pode conter carateres especiais.\n");
+      printf("Resposta: ");
+      scanf("%f", &PIB_C2);
+
+      printf("5) Defina a quantidade de pontos Turisticos:\n");
+      printf("*Nao pode conter carateres especiais.\n");
+      printf("Resposta: ");
+      scanf("%i", &Pontos_turisticos1_C2);
+
+
+    printf("===== Captura das informacoes bem sucedidas =====\n");
+    //EXIBINDO INFORMACOES CAPTURADAS
+      printf("Codigo da Carta: %s.\n", Codigo_da_Carta_C1);
+      printf("Estado: %s.\n", Estado1_C1);
+      printf("Cidade: %s.\n", Cidade1_C1);
+      printf("Populacao: %i.\n", Populacao1_C1);
+      printf("PIB: %f.\n", PIB_C1);
+      printf("Pontos Turisticos: %i.\n", Pontos_turisticos1_C1);
+
+  
+    //EXIBINDO INFORMACOES CAPTURADAS
+      printf("Codigo da Carta: %s.\n", Codigo_da_Carta_C2);
+      printf("Estado: %s.\n", Estado1_C2);
+      printf("Cidade: %s.\n", Cidade1_C2);
+      printf("Populacao: %i.\n", Populacao1_C2);
+      printf("PIB: %f.\n", PIB_C2);
+      printf("Pontos Turisticos: %i.\n", Pontos_turisticos1_C2);
+
+  printf("Pressione Enter para sair...\n");
+  getchar(); // Espera o usuario pressionar Enter 
+  return 0;
+}
