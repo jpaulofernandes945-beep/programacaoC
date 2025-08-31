@@ -101,7 +101,5 @@ int main (){
       printf("PIB: %f.\n", PIB_C2);
       printf("Pontos Turisticos: %i.\n", Pontos_turisticos1_C2);
 
-  printf("Pressione Enter para sair...\n");
-  getchar(); // Espera o usuario pressionar Enter 
   return 0;
 }
