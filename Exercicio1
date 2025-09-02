@@ -16,8 +16,8 @@ int main (){
   //COLETANDO DADOS DO USUARIO
     //CARTA1
       char Codigo_da_Carta_C1[06] = "C0001", Estado1_C1[30], Cidade1_C1[30];
-      int Populacao1_C1, Pontos_turisticos1_C1;
-      float Area_C1, PIB_C1;
+      int Populacao1_C1, Pontos_Turisticos1_C1;
+      float Area_C1, PIB_C1, Densidade_Populacional_C1, PIB_Per_Capita_C1;
 
       printf("Codigo da carta: %s.\n", Codigo_da_Carta_C1);
 
@@ -46,7 +46,7 @@ int main (){
       printf("5) Defina a quantidade de pontos Turisticos:\n");
       printf("*Nao pode conter carateres especiais.\n");
       printf("Resposta: ");
-      scanf("%i", &Pontos_turisticos1_C1);
+      scanf("%i", &Pontos_Turisticos1_C1);
       
 
     //EXIBINDO INFORMACOES CAPTURADAS
@@ -56,13 +56,13 @@ int main (){
       printf("Cidade: %s.\n", Cidade1_C1);
       printf("Populacao: %i.\n", Populacao1_C1);
       printf("PIB: %f.\n", PIB_C1);
-      printf("Pontos Turisticos: %i.\n", Pontos_turisticos1_C1);
+      printf("Pontos Turisticos: %i.\n", Pontos_Turisticos1_C1);
       
 
     //CARTA2
       char Codigo_da_Carta_C2[06] = "C0002", Estado1_C2[30], Cidade1_C2[30];
-      int Populacao1_C2, Pontos_turisticos1_C2;
-      float Area_C2, PIB_C2;
+      int Populacao1_C2, Pontos_Turisticos1_C2;
+      float Area_C2, PIB_C2, Densidade_Populacional_C2, PIB_Per_Capita_C2;
 
       printf("Codigo da carta: %s.\n", Codigo_da_Carta_C2);
 
@@ -91,17 +91,37 @@ int main (){
       printf("5) Defina a quantidade de pontos Turisticos:\n");
       printf("*Nao pode conter carateres especiais.\n");
       printf("Resposta: ");
-      scanf("%i", &Pontos_turisticos1_C2);
+      scanf("%i", &Pontos_Turisticos1_C2);
       
     //EXIBINDO INFORMACOES CAPTURADAS
-    printf("===== Captura das informacoes bem sucedidas =====\n");
+      printf("===== Captura das informacoes bem sucedidas =====\n");
       printf("Codigo da Carta: %s.\n", Codigo_da_Carta_C2);
       printf("Estado: %s.\n", Estado1_C2);
       printf("Cidade: %s.\n", Cidade1_C2);
       printf("Populacao: %i.\n", Populacao1_C2);
       printf("PIB: %f.\n", PIB_C2);
-      printf("Pontos Turisticos: %i.\n", Pontos_turisticos1_C2);
-      
-      
+      printf("Pontos Turisticos: %i.\n", Pontos_Turisticos1_C2);
+
+
+
+  //TRABALHANDO VALORES
+    //CALCULANDO PRIMEIRA CARTA
+      Densidade_Populacional_C1 = Populacao1_C1 / Area_C1;
+      PIB_Per_Capita_C1 = Populacao1_C1 / PIB_C1;
+
+    //CALCULANDO SEGUNDA CARTA
+      Densidade_Populacional_C2 = Populacao1_C2 / Area_C2;
+      PIB_Per_Capita_C2 = Populacao1_C2 / PIB_C2;
+
+  //EXIBINDO VALORES TRABALHADOS
+    printf("===== Comparando Densidades Populacionais =====\n");
+    printf("A Densidade populacional da carta 1 é %.2f \n", Densidade_Populacional_C1);
+    printf("A Densidade populacional da carta 2 é %.2f \n", Densidade_Populacional_C2);
+
+    printf("===== Comparando PIB Per Capito =====\n");
+    printf("O PIB Per Capito da carta 1 é %.2f \n", PIB_Per_Capita_C1);
+    printf("O PIB Per Capito da carta 2 é %.2f \n", PIB_Per_Capita_C2);
+
+
   return 0;
 }
